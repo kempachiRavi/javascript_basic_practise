@@ -175,7 +175,7 @@ console.log(fruits)
 ///Array of arrays
 //Array can store different data types including an array itself. Let us create an array of arrays
 const firstNums = [1, 2, 3]
-const secondNums = [1, 4, 9]
+const secondNums = [1, 4, 5]
 
 // const arrayOfArray =  [[1, 2, 3], [1, 2, 3]]
 // console.log(arrayOfArray[0]) // [1, 2, 3]
@@ -189,3 +189,6 @@ console.log(arrOfArr)
  console.log(fullStack.length)  // 2
  console.log(fullStack[0])  // ["HTML", "CSS", "JS", "React", "Redux"]
  console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
+
+
+ // hello my name is ravi
