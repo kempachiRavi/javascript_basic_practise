@@ -101,19 +101,59 @@
 // outer()
 
 
-function outer(){
-    let b = 10
-    // console.log(b)
+// function outer(){
+//     let b = 10
+//     // console.log(b)
 
-    if(true){
-        console.log(b)
-        var b = 200        /// give error 
-        console.log(b)
+//     if(true){
+//         console.log(b)
+//         var b = 200        /// give error 
+//         console.log(b)
+//     }
+//     console.log(b)
+// }
+
+// outer()
+
+
+// function outer(){
+//     var a = 10
+//     console.log(a)       ///  output error  line 129   ReferenceError: a is not defined at scope.js:129:13
+//     function inner(){
+//         console.log(a)
+//         var a = 200;
+//         console.log(a)
+//     }
+//     console.log(a)
+// }
+// console.log(a)
+// outer()
+
+
+// function outer(){
+//     var a = 10
+//     console.log(a)       ///  output 10,10   because inner function hasent been called
+//     function inner(){
+//         console.log(a)
+//         var a = 200;
+//         console.log(a)
+//     }
+//     console.log(a)
+// }
+// // console.log(a)  situation 1 
+// outer()
+
+function outer(){
+    var a = 10
+    console.log(a) 
+    
+    inner()      // situatiion 2              
+        function inner(){              ///   output  10,un,200,10
+        console.log(a)
+        var a = 200;
+        console.log(a)
     }
-    console.log(b)
+    console.log(a)
 }
 
 outer()
-
-
-
