@@ -115,6 +115,47 @@
 
 // outer()
 
+// function outer(){
+//     var b = 10
+//     // console.log(b)
+
+//     if(true){
+//         console.log(c)
+//         let c = 200        /// give reference error cannot access c before initilixing
+//         console.log(b)
+//     }
+//     console.log(b)
+// }
+
+// outer()
+
+// function outer(){
+//     let b = 10
+//     console.log(b)
+
+//     if(true){
+//         console.log(b)
+//         let b = 200        /// give 10 first then reference error cannot access b before initlization 
+//         console.log(b)
+//     }
+//     console.log(b)
+// }
+
+// outer()
+
+// function outer(){
+//     let b = 10
+//     console.log(b)
+
+//     if(true){
+//         console.log(b)
+//          b = 200            // output 10,10,200,200
+//         console.log(b)
+//     }
+//     console.log(b)
+// }
+
+// outer()
 
 // function outer(){
 //     var a = 10
@@ -143,17 +184,35 @@
 // // console.log(a)  situation 1 
 // outer()
 
-function outer(){
-    var a = 10
-    console.log(a) 
+// function outer(){
+//     var a = 10
+//     console.log(a) 
     
-    inner()      // situatiion 2              
-        function inner(){              ///   output  10,un,200,10
-        console.log(a)
-        var a = 200;
-        console.log(a)
-    }
-    console.log(a)
-}
+//     inner()      // situatiion 2              
+//         function inner(){              ///   output  10,un,200,10
+//         console.log(a)
+//         var a = 200;
+//         console.log(a)
+//     }
+//     console.log(a)
+// }
 
-outer()
+// outer()
+
+
+
+// function outer(){
+//     let a = 10
+//     console.log(a)
+
+//     inner()
+//     function inner(){
+
+//         let a = 100
+//         console.log(a)
+//     }
+
+//     console.log(a)
+// }
+
+// outer()    //////////  out put 10,100,10
